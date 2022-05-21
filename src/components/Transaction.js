@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Transaction() {
+export default function Transaction({ transaction }) {
   return (
     <li className='minus'>
       Cash <span>-$400</span>
