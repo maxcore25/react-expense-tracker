@@ -12,8 +12,8 @@ export default function AddTransaction() {
           <label htmlFor='text'>Text</label>
           <input
             type='text'
-            value={'text'}
-            onChange={e => console.log(e.target.value)}
+            value={text}
+            onChange={e => setText(e.target.value)}
             placeholder='Enter text...'
           />
         </div>
@@ -24,8 +24,8 @@ export default function AddTransaction() {
           </label>
           <input
             type='number'
-            value={123}
-            onChange={e => console.log(e.target.value)}
+            value={amount}
+            onChange={e => setAmount(e.target.value)}
             placeholder='Enter amount...'
           />
         </div>
