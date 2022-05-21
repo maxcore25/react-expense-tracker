@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function AddTransaction() {
+  const [text, setText] = useState('');
+  const [amount, setAmount] = useState(0);
+
   return (
     <>
       <h3>Add new transaction</h3>
