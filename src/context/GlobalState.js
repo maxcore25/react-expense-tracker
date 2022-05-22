@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from 'react';
+import { DELETE_TRANSACTION } from '../constants';
 import AppReducer from './AppReducer';
 
 // Initial state
@@ -21,7 +22,7 @@ export default function GlobalProvider({ children }) {
   // Actions
   function deleteTransaction(id) {
     dispatch({
-      type: 'DELETE_TRANSACTION',
+      type: DELETE_TRANSACTION,
       payload: id,
     });
   }
