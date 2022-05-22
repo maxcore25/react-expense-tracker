@@ -27,11 +27,19 @@ export default function GlobalProvider({ children }) {
     });
   }
 
+  function addTransaction(transaction) {
+    dispatch({
+      type: DELETE_TRANSACTION,
+      payload: transaction,
+    });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
         transactions: state.transactions,
         deleteTransaction,
+        addTransaction,
       }}>
       {children}
     </GlobalContext.Provider>
