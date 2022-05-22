@@ -5,7 +5,10 @@ export default function Transaction({ transaction }) {
 
   return (
     <li className='minus'>
-      {transaction.text} <span>-$400</span>
+      {transaction.text}{' '}
+      <span>
+        {sign}${transaction.amount}
+      </span>
       <button className='delete-btn'>x</button>
     </li>
   );
