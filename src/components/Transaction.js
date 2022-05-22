@@ -7,7 +7,7 @@ export default function Transaction({ transaction }) {
     <li className='minus'>
       {transaction.text}{' '}
       <span>
-        {sign}${transaction.amount}
+        {sign}${Math.abs(transaction.amount)}
       </span>
       <button className='delete-btn'>x</button>
     </li>
