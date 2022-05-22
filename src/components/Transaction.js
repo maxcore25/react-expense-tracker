@@ -1,9 +1,11 @@
 import React from 'react';
 
 export default function Transaction({ transaction }) {
+  const sign = transaction.amount < 0 ? '-' : '+';
+
   return (
     <li className='minus'>
-      Cash <span>-$400</span>
+      {transaction.text} <span>-$400</span>
       <button className='delete-btn'>x</button>
     </li>
   );
