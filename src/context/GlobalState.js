@@ -31,6 +31,7 @@ export default function GlobalProvider({ children }) {
     <GlobalContext.Provider
       value={{
         transactions: state.transactions,
+        deleteTransaction,
       }}>
       {children}
     </GlobalContext.Provider>
