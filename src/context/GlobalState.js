@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import { DELETE_TRANSACTION } from '../constants';
+import { ADD_TRANSACTION, DELETE_TRANSACTION } from '../constants';
 import AppReducer from './AppReducer';
 
 // Initial state
@@ -29,7 +29,7 @@ export default function GlobalProvider({ children }) {
 
   function addTransaction(transaction) {
     dispatch({
-      type: DELETE_TRANSACTION,
+      type: ADD_TRANSACTION,
       payload: transaction,
     });
   }

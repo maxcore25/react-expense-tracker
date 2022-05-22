@@ -1,4 +1,4 @@
-import { DELETE_TRANSACTION } from '../constants';
+import { DELETE_TRANSACTION, ADD_TRANSACTION } from '../constants';
 
 export const AppReducer = (state, action) => {
   switch (action.type) {
