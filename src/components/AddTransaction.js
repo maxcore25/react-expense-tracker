@@ -12,7 +12,7 @@ export default function AddTransaction() {
     const newTransaction = {
       id: +new Date(),
       text,
-      amount,
+      amount: +amount,
     };
 
     addTransaction(newTransaction);
